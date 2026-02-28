@@ -1,7 +1,7 @@
 # Dai Kazoku Animal Kaiser Custom Controller
 Animal Kaiser custom controller using ESP32-C3 Super mini + controller driver
 
-# Dai Kazoku Animal Kaiser Custom Controller
+
 
 ![Controller UI](docs/ui_screenshot.png) A high-performance, ultra-low latency custom arcade controller built specifically for Animal Kaiser emulators (and other arcade games). 
 
@@ -9,6 +9,7 @@ Since the **ESP32-C3 SuperMini** lacks native hardware support for USB HID (Keyb
 
 ## ✨ Features
 
+* **Executable File:** The Python script is compiled into an executable file that can be run without Python installed.
 * **Ultra-Low Latency:** Uses FreeRTOS tasks to poll arcade button states at 1000Hz (1ms response time) without blocking the CPU.
 * **Zero-Ghosting:** Read multiple buttons simultaneously with independent debounce logic.
 * **Virtual Gamepad Emulation:** Python script utilizes `vgamepad` (ViGEmBus) to make Windows recognize the device as a standard Xbox 360 Controller.
